@@ -1,0 +1,6 @@
+.preview a.label.custom, .label {
+  border-radius: 20px;
+  margin: 0 2px;
+  padding: 1px 6px 1px 6px;
+  white-space: nowrap;
+}

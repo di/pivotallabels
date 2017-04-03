@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pivotal Labels Options</title>
+  <style>
+    body {
+      line-height: 2em;
+      font-size: 18px;
+    }
+    input, button {
+      line-height: 1.5em;
+      font-size: 18px;
+    }
+    .hidden {
+      display: none;
+    }
+    .color {
+      position: relative;
+      height: 20px;
+      width: 20px;
+      border: 1px solid #888;
+      line-height: 18px;
+      display: inline-block;
+      margin: 0;
+      padding: 2px;
+      border: 0;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 90%;
+      font-family: arial,sans-serif;
+      cursor: pointer;
+      margin: 2px;
+    }
+  </style>
+  <link href="css/inject/inject.css" rel="stylesheet">
+</head>
+<body>
+
+
+<h2 id="labelHeader" class="hidden">Existing label colors:</h2>
+<div id="labels"></div>
+
+<div id="new">
+  <h2>Add a new label color:</h2>
+  <div>
+    <label>
+      Label name:
+      <input type="text" id="labelName">
+    </label>
+  </div>
+  <div>
+    <label id="palette">
+      Color (hex):
+      #<input type="text" id="labelColor" size="6" maxlength="6">
+    </label>
+  </div>
+</div>
+
+<div id="status"></div>
+<button id="save">Save</button>
+
+<script src="options.js">
+</script>
+</body>
+</html>
