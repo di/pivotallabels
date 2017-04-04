@@ -49,7 +49,7 @@ function update_labels(storage) {
   for (let key in storage.labels) {
     let label = document.createElement("a")
     label.appendChild(document.createTextNode(key));
-    label.className = 'label'
+    label.className = 'label custom'
     let hex = '#' + storage.labels[key]
     label.style.backgroundColor = hex
     label.style.color = textColor(hex)
@@ -58,6 +58,7 @@ function update_labels(storage) {
     del.href = "#"
     del.onclick = () => delete_label(key)
     let div = document.createElement("div");
+    div.className = 'preview'
     div.appendChild(label);
     div.appendChild(del);
     labelDiv.appendChild(div);
