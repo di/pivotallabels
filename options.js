@@ -64,7 +64,7 @@ function update_labels(storage) {
 
 // Saves options to chrome.storage
 function save_options() {
-  var labelName = document.getElementById('labelName').value;
+  var labelName = document.getElementById('labelName').value.toLowerCase();
   document.getElementById('labelName').value = '';
   var labelColor = document.getElementById('labelColor').value;
   document.getElementById('labelColor').value = '';
