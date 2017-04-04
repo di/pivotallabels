@@ -38,8 +38,10 @@ function delete_label(labelName) {
 function update_labels(storage) {
   if (!empty(storage.labels)) {
     document.getElementById('labelHeader').className = '';
+    document.getElementById('labelDescription').className = '';
   } else {
     document.getElementById('labelHeader').className = 'hidden';
+    document.getElementById('labelDescription').className = 'hidden';
   }
 
   let labelDiv = document.getElementById('labels');
