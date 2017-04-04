@@ -1,6 +1,6 @@
 {
   "name": "Pivotal Labels",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
   "author": "Dustin Ingram",
   "description": "This Chrome extension for Pivotal Tracker allows you to set custom colors for label names.",
