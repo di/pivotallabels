@@ -67,13 +67,13 @@ function update_labels(storage) {
 // Saves options to chrome.storage
 function save_options() {
   var labelName = document.getElementById('labelName').value.toLowerCase();
-  document.getElementById('labelName').value = '';
   var labelColor = document.getElementById('labelColor').value;
-  document.getElementById('labelColor').value = '';
   chrome.storage.sync.get({'labels': {}}, function(storage) {
     if (labelName && labelColor) {
       storage.labels[labelName] = labelColor
       chrome.storage.sync.set(storage, function() {
+        document.getElementById('labelName').value = '';
+        document.getElementById('labelColor').value = '';
         update_labels(storage);
       });
     } else {
